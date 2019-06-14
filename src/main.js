@@ -8,9 +8,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import VueParallaxJs from 'vue-parallax-js'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
+Vue.use(VueParallaxJs)
 
 new Vue({
   router,
