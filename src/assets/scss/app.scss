@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400&display=swap');
+
+#app {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+.navigation-bar {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    z-index: 1;
+    .navigation-bar-content {
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                transition: .4s;
+                color: rgb(255, 219, 14);
+                cursor: pointer;
+            }
+            &:focus {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.client-contact {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    background: #000;
+    .client-contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        .client-contact-text {
+            margin-left: 5px;
+            display: block;
+        }
+    }
+}
+
+.client-floating-contact {
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    padding: 15px;
+    background-color: #fff;
+    color: #444;
+}
+
+.intro-client-brand {
+    position: relative;
+    float: right;
+    top: 270px;
+    margin-right: 200px;
+    width: 600px;
+    text-align: right;
+    h1 {
+        color: gold;
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+.intro-left {
+    position: relative;
+    float: left;
+    top: 490px;
+    margin-left: 200px;
+    width: 600px;
+    text-align: left;
+    h1 {
+        color: gold;
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+    }
+}

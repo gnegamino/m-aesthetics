@@ -124,26 +124,6 @@
                 </div>
             </b-container>
         </div>
-        <div class="address-section">
-            <b-container>
-                <div class="address-flex">
-                    <img src="../assets/M logo.png">
-                    <div class="address-detail">
-                        Katipunan Ave, White Plains, Quezon City,<br>
-                        1110 Metro Manila<br>
-                        Email: info@maesthetics.com<br>
-                        Phone: (+632) 795 2154<br>
-                        Mobile: (+63917) 892 6319<br>
-                        Website: www.maesthetics.com
-                    </div>
-                </div>
-            </b-container>
-        </div>
-        <div class="footer-section">
-            <b-container>
-                Copyright © 2019 M Ageless Aesthetics. All Rights Reserved.
-            </b-container>
-        </div>
     </div>
 </template>
 
