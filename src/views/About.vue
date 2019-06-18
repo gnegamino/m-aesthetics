@@ -1,14 +1,15 @@
 <template>
-    <div class="about">
+    <div class="about pushed-content">
         <SubNavigation/>
         <div class="regular-content parallax-2">
             <b-container>
-                <div class="intro intro-3">
+                <div class="hero-title hero-title--left">
                     <h1>ABOUT US</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptate corrupti placeat earum ipsam aspernatur veritatis hic, molestiae, commodi nemo quibusdam delectus! Quidem, nulla aliquid. Recusandae ut perspiciatis voluptas fuga!</h2>
                 </div>
             </b-container>
         </div>
-        <div class="content-section">
+        <div class="content-section section--slate">
             <b-container>
                 <div class="content-header">
                     WHO ARE WE
@@ -18,7 +19,7 @@
                 </p>
             </b-container>
         </div>
-        <div class="content-section">
+        <div class="content-section section--light">
             <b-container>
                 <div class="content-header">
                     OUR TEAM
@@ -27,45 +28,51 @@
                     <div class="team-detail">
                         <img src="../assets/team-1.jpg">
                         <div class="detail">
-                            <p>
-                                RYAN PARAISO MD<br>
-                                PLASTIC AND RECONTRUCTIVE AND AESTHETIC SURGEON
+                            <div class="member-name">
+                                Mike Versoza
+                            </div>
+                            <div class="member-position">
+                                M-Aesthetics Doctor / Owner
+                            </div>
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
                             </p>
-                            <p>
-                                Dr. Ryan Paraiso is the lead physician of PROFERO Ageless Aesthetics, and is a graduate of the Philippine Association of Plastic, Reconstructive & Aesthetic Surgery. Dr. Paraiso is one of a little over a hundred physicians who have undergone the stringent training of the Philippine Association of plastic and reconstructive and aesthetic surgery (PAPRAS), nationally recognized as the training and regulatory body for the Philippines in the field of plastic and reconstructive surgery.
-                            </p>
-                            <p>
-                                In having completed his training and along with his previous training in General Surgery, Dr. Paraiso can achieve optimal results and a natural look, with his deep understanding of human anatomy and structure, combined with an acute aesthetic eye, hand in hand with his commitment of restoring youthful beauty to create the best and happy you.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="team-detail">
-                        <img src="../assets/team-1.jpg">
-                        <div class="detail">
-                            <p>
-                                RYAN PARAISO MD<br>
-                                PLASTIC AND RECONTRUCTIVE AND AESTHETIC SURGEON
-                            </p>
-                            <p>
-                                Dr. Ryan Paraiso is the lead physician of PROFERO Ageless Aesthetics, and is a graduate of the Philippine Association of Plastic, Reconstructive & Aesthetic Surgery. Dr. Paraiso is one of a little over a hundred physicians who have undergone the stringent training of the Philippine Association of plastic and reconstructive and aesthetic surgery (PAPRAS), nationally recognized as the training and regulatory body for the Philippines in the field of plastic and reconstructive surgery.
-                            </p>
-                            <p>
-                                In having completed his training and along with his previous training in General Surgery, Dr. Paraiso can achieve optimal results and a natural look, with his deep understanding of human anatomy and structure, combined with an acute aesthetic eye, hand in hand with his commitment of restoring youthful beauty to create the best and happy you.
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
                             </p>
                         </div>
                     </div>
                     <div class="team-detail">
                         <img src="../assets/team-1.jpg">
                         <div class="detail">
-                            <p>
-                                RYAN PARAISO MD<br>
-                                PLASTIC AND RECONTRUCTIVE AND AESTHETIC SURGEON
+                            <div class="member-name">
+                                Mike Versoza
+                            </div>
+                            <div class="member-position">
+                                M-Aesthetics Doctor / Owner
+                            </div>
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
                             </p>
-                            <p>
-                                Dr. Ryan Paraiso is the lead physician of PROFERO Ageless Aesthetics, and is a graduate of the Philippine Association of Plastic, Reconstructive & Aesthetic Surgery. Dr. Paraiso is one of a little over a hundred physicians who have undergone the stringent training of the Philippine Association of plastic and reconstructive and aesthetic surgery (PAPRAS), nationally recognized as the training and regulatory body for the Philippines in the field of plastic and reconstructive surgery.
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
                             </p>
-                            <p>
-                                In having completed his training and along with his previous training in General Surgery, Dr. Paraiso can achieve optimal results and a natural look, with his deep understanding of human anatomy and structure, combined with an acute aesthetic eye, hand in hand with his commitment of restoring youthful beauty to create the best and happy you.
+                        </div>
+                    </div>
+                    <div class="team-detail">
+                        <img src="../assets/team-1.jpg">
+                        <div class="detail">
+                            <div class="member-name">
+                                Mike Versoza
+                            </div>
+                            <div class="member-position">
+                                M-Aesthetics Doctor / Owner
+                            </div>
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
+                            </p>
+                            <p class="content-paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, consequuntur? Ipsam recusandae libero perspiciatis officiis voluptates dolorem nostrum earum, fuga officia excepturi. Provident ab voluptatem nobis voluptas minus praesentium iusto.
                             </p>
                         </div>
                     </div>
@@ -78,24 +85,20 @@
                     WHAT WE DO
                 </div>
                 <p class="content-paragraph">
-                    A multi-specialty aesthetic clinic that offers plastic and reconstructive operations, feature enhancements and rejuvenative options right in the heart of the Metro Manila, Philippines.
-                    At PROFERO, our dedication to our patients is our primary priority.  We take the time to make sure our patients understand the options available to them and we guide our patients to realize the result they desire and need. Every client receives the best treatments possible, which are conducted to the highest standards, with the utmost care and attention in a friendly, warm, welcoming and safe environment.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
                 </p>
                 <p class="content-paragraph">
-                    Our services not only include surgical and nonsurgical medical procedures by specialists in the fields of plastic surgery and dermatology,
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
                 </p>
                 <p class="content-paragraph">
-                    PROFERO offers the most effective and safe treatments, customized to address each individual’s needs, overseen by experts in their specific field, in an environment of comfort and discretion, alongside quality service that is personalised and topnotch.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
                 </p>
                 <p class="content-paragraph">
-                    Above all, our team of doctors and specialists care about your health and interests. We keep in mind the individually personal nature of what we do for you and take personal joy in being a part of achieving your goals.
-                </p>
-                <p class="content-paragraph">
-                    Our vision is to create a one-stop center of excellence in cosmetic dermatology and surgery procedures, pushing boundaries and outcomes, using superior products and the best of class technologies in the hands of some of the most experienced, skillful medical and surgical teams.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
                 </p>
             </b-container>
         </div>
-        <div class="content-section">
+        <div class="content-section section--light">
             <b-container>
                 <div class="content-header">
                     WHERE WE DO IT
@@ -143,124 +146,34 @@
     }
 </script>
 
-<style lang="scss">
-    .address-section {
-        padding: 50px 0px;
-        margin-top: 60px;
-    }
-    .address-flex {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .address-section img {
-        width: 15%;
-    }
-    .address-section .address-detail {
-        text-align: left;
-        margin-left: 15px;
-    }
-    .footer-section {
-        background-color: #0A0A0A;
-        color: #fff;
-        padding: 15px 0px;
-        text-align: left;
-    }
-    body {
-        background-color: #000;
-        overflow-x: hidden;
-    }
-    .parallax {
-        height: 100vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .parallax-intro {
-        background-image: url('../assets/parallax-1.jpg');
-    }
-    .parallax-1 {
-        background-image: url('../assets/parallax-1.jpg');
-    }
-    .parallax-2 {
-        background-image: url('../assets/parallax-2.jpg');
-    }
-    .parallax-3 {
-        background-image: url('../assets/parallax-3.jpg');
-    }
-    .parallax-4 {
-        background-image: url('../assets/parallax-4.jpg');
-    }
+<style lang="scss" scoped>
     .our-team {
+        .member-name {
+            font-size: 25px;
+            text-align: left;
+            font-weight: 700;
+        }
+        .member-position {
+            font-size: 20px;
+            text-align: left;
+        }
         .team-detail {
             margin-top: 30px;
             display: flex;
             img {
-                width: 35%;
-                height: 440px;
+                width: 25%;
+                height: 320px;
             }
-            .detail p {
-                text-align: left;
-                margin-left: 15px;
-                line-height: 2;
-            }
-        }
-    }
-    .regular-content {
-        height: 100vh;
-    }
-    .content-section {
-        padding: 25px 0px;
-        background-color: #000;
-        .content-header {
-            font-size: 40px;
-            color: #e5e510;
-        }
-        .content-paragraph {
-            margin-top: 15px;
-            font-size: 20px;
-            color: #e5e#fff510;
-            text-align: left;
-        }
-    }
-    .intro {
-        &.intro-3 {
-            top: 280px;
-            color:#e5e510;
-            h1 {
-                font-size: 70px;
+            .detail {
+                margin-left: 30px;
+                p {
+                    text-align: left;
+                    line-height: 2;
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
             }
         }
-    }
-    .intro, .intro-2 {
-        color:#e5e510;
-        line-height: 61px;
-        position: relative;
-    }
-    .intro {
-        top: 180px;
-    }
-    .intro h1 {
-        font-size: 80px;
-    }
-    .intro h2 {
-        font-size: 50px;
-    }
-    .intro-2 {
-        width: 50%;
-        top: 210px;
-    }
-    .intro-2 h1 {
-        font-size: 50px;
-    }
-    .intro-left {
-        float: left;
-        text-align: left;
-    }
-    .intro-right {
-        float: right;
-        text-align: right;
     }
     .gallery {
         display: flex;

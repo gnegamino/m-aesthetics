@@ -10,6 +10,8 @@
 
 body {
     scroll-behavior: smooth;
+    background-color: #000;
+    overflow-x: hidden;
 }
 .navigation-bar {
     justify-content: center;
@@ -92,5 +94,103 @@ body {
     }
     p {
         font-size: 20px;
+    }
+}
+
+// Parallax
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parallax-intro {
+    background-image: url('../parallax-1.jpg');
+}
+.parallax-1 {
+    background-image: url('../parallax-1.jpg');
+}
+.parallax-2 {
+    background-image: url('../parallax-2.jpg');
+}
+.parallax-3 {
+    background-image: url('../parallax-3.jpg');
+}
+.parallax-4 {
+    background-image: url('../parallax-4.jpg');
+}
+.regular-content {
+    height: 100vh;
+}
+
+.pushed-content {
+    margin-top: 128px;
+}
+
+
+.content-section {
+    padding: 40px 0px;
+    background-color: #000;
+    .content-header {
+        font-size: 40px;
+        color: gold;
+    }
+    .content-sub-header {
+        font-size: 25px;
+        color: gold;
+    }
+    .content-paragraph {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: left;
+    }
+    &.section--slate {
+        background-color: #202021;
+        color: #fff;
+        .content-header {
+            font-size: 40px;
+            color: gold;
+        }
+        .content-paragraph {
+            color: #fff;
+        }
+    }
+    &.section--light {
+        background-color: #fff;
+        color: #333333;
+        .content-header {
+            font-size: 40px;
+            color: #333333;
+        }
+        .content-sub-header {
+            color: #333;
+        }
+        .content-paragraph {
+            color: #333333;
+        }
+    }
+}
+
+.hero-title {
+    padding-top: 20%;
+    h1 {
+        font-size: 65px;
+        color: gold;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 18px;
+        width: 60%;
+        line-height: 2;
+    }
+    &.hero-title--left {
+        text-align: left;
+    }
+    &.hero-title--right {
+        text-align: right;
+        h2 {
+            float: right;
+        }
     }
 }
