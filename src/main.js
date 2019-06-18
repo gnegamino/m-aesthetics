@@ -11,9 +11,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import VueParallaxJs from 'vue-parallax-js'
-import vuescroll from 'vue-scroll'
 
-Vue.use(vuescroll)
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 Vue.use(VueParallaxJs)
