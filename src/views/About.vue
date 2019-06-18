@@ -1,5 +1,6 @@
 <template>
     <div class="about">
+        <SubNavigation/>
         <div class="regular-content parallax-2">
             <b-container>
                 <div class="intro intro-3">
@@ -128,15 +129,18 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+    // @ is an alias to /src
+    import SubNavigation from '@/components/SubNavigation.vue'
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'about',
+        components: {
+            SubNavigation
+        },
+        mounted() {
+            window.scroll(0, 0);
+        }
+    }
 </script>
 
 <style lang="scss">
@@ -205,7 +209,6 @@ export default {
     }
     .regular-content {
         height: 100vh;
-        width: 1348px;
     }
     .content-section {
         padding: 25px 0px;
