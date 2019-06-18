@@ -132,10 +132,12 @@
 </template>
 
 <script>
+    import debounce from 'lodash/debounce';
+
     export default {
         methods: {
-            handleScroll (event) {
-                if (event.pageY > 670) {
+            handleScroll(event) {
+                if (window.scrollY > 670) {
                     document.getElementById('sub-navigation-bar').style.display = "block";
                     document.querySelector('.client-floating-contact').style.display = "none";
                 } else {
@@ -144,12 +146,14 @@
                 }
             }
         },
-        created () {
-            window.scrollTo(0, 0);
-            window.addEventListener('scroll', this.handleScroll);
+
+        created() {
+            this.handleDebouncedScroll = debounce(this.handleScroll, 50);
+            window.addEventListener('scroll', this.handleDebouncedScroll);
         },
-        destroyed () {
-            window.removeEventListener('scroll', this.handleScroll);
+
+        beforeDestroy() {
+            window.removeEventListener('scroll', this.handleDebouncedScroll);
         }
     }
 </script>
