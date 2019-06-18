@@ -146,11 +146,4 @@
             font-weight: 300;
         }
     }
-    .home-footer {
-        background: #000;
-        .home-footer-left {
-            padding: 20px;
-            color: #fff;
-        }
-    }
 </style>
