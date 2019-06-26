@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400&display=swap');
+@import 'variables';
+
 
 #app {
     font-family: 'Encode Sans Expanded', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #fff;
+    color: $light-color;
 }
 
 body {
     scroll-behavior: smooth;
-    background-color: #000;
+    background-color: $dark-color;
     overflow-x: hidden;
 }
 .navigation-bar {
@@ -24,15 +26,15 @@ body {
         padding-left: 20px;
         padding-right: 20px;
         a {
-            color: #fff;
+            color: $light-color;
             text-decoration: none;
             &:hover {
                 transition: .4s;
-                color: rgb(255, 219, 14);
+                color: $primary-color;
                 cursor: pointer;
             }
             &:focus {
-                color: #fff;
+                color: $light-color;
                 text-decoration: none;
             }
         }
@@ -43,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 5px 0px;
-    background: #000;
+    background: $dark-color;
     .client-contact-item {
         display: flex;
         justify-content: center;
@@ -61,7 +63,7 @@ body {
     left: 0;
     bottom: 40px;
     padding: 15px;
-    background-color: #fff;
+    background-color: $light-color;
     color: #444;
 }
 
@@ -73,7 +75,7 @@ body {
     width: 600px;
     text-align: right;
     h1 {
-        color: gold;
+        color: $primary-color;
         font-size: 50px;
     }
     p {
@@ -89,7 +91,7 @@ body {
     width: 600px;
     text-align: left;
     h1 {
-        color: gold;
+        color: $primary-color;
         font-size: 50px;
     }
     p {
@@ -131,14 +133,14 @@ body {
 
 .content-section {
     padding: 40px 0px;
-    background-color: #000;
+    background-color: $dark-color;
     .content-header {
         font-size: 40px;
-        color: gold;
+        color: $primary-color;
     }
     .content-sub-header {
         font-size: 25px;
-        color: gold;
+        color: $primary-color;
     }
     .content-paragraph {
         margin-top: 15px;
@@ -147,17 +149,17 @@ body {
     }
     &.section--slate {
         background-color: #202021;
-        color: #fff;
+        color: $light-color;
         .content-header {
             font-size: 40px;
-            color: gold;
+            color: $primary-color;
         }
         .content-paragraph {
-            color: #fff;
+            color: $light-color;
         }
     }
     &.section--light {
-        background-color: #fff;
+        background-color: $light-color;
         color: #333333;
         .content-header {
             font-size: 40px;
@@ -176,7 +178,7 @@ body {
     padding-top: 20%;
     h1 {
         font-size: 65px;
-        color: gold;
+        color: $primary-color;
         text-transform: uppercase;
     }
     h2 {

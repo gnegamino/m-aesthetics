@@ -80,6 +80,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
+
     .content-and-picture {
         display: flex;
         justify-content: center;
@@ -89,8 +91,8 @@
             margin-left: 25px;
             text-align: left;
             .detail-button {
-                background-color: #000;
-                color: #fff;
+                background-color: $dark-color;
+                color: $light-color;
                 padding: 6px 12px;
                 border: none;
             }

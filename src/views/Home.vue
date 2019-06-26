@@ -77,6 +77,8 @@
 </script>
 
 <style lang="scss">
+    @import '../assets/scss/variables';
+
     .intro-container {
         padding-top: 60px;
         display: flex;

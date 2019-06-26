@@ -104,6 +104,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
+
     #main-navigation-bar {
         margin-top: 40px;
         height: 80px;
@@ -118,7 +120,7 @@
         top: 0px;
         width: 100%;
         z-index: 10000;
-        background-color: rgb(8, 18, 36);
+        background-color: lighten($dark-color, 10%);
         .client-contact {
             width: 100%;
         }
