@@ -57,7 +57,7 @@
             <div class="intro-client-brand">
                 <h1>M AESTHETICS</h1>
                 <p>
-                    A worldclass facility which offer various products and procedures designed to enhance one's beauty and fulfill one's fantasy of magnificence.
+                    A world class facility which offer various products and procedures designed to enhance one's beauty and fulfill one's fantasy of magnificence.
                 </p>
             </div>
         </div>
@@ -73,7 +73,6 @@
                         <div class="doctor-mike-affiliations">
                             <h3>Affiliations:</h3>
                             <h6>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons (PAPRAS)</h6>
-                            
                             <img src="../../src/assets/papras.png">
                         </div>
                     </div>
@@ -81,8 +80,29 @@
             </div>
         </div>
         <div class="bg-2">
-            <div class="home-services">
-                    asdas
+            <div class="container">
+                <div class="home-services">
+                    <h1>SERVICES</h1>
+                    <div class="home-services-group">
+                        <div class="home-services-list">
+                            <h1>Face, skin and body services</h1>
+                            <ul>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Anti-Acne Services</li>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Whitening Services</li>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Anti-aging Facial Services</li>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Carbon Laser Facial</li>
+                            </ul>
+                        </div>
+                        <div class="home-services-list">
+                            <h1>Surgical Services</h1>
+                            <ul>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Liposuction</li>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Rhinoplasty</li>
+                                <li><i class="fa fa-arrow-right service-list-icon"></i> Tattoo Removal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -92,6 +112,20 @@
     import HomeNavigation from '@/components/HomeNavigation.vue'
 
     export default {
+        data() {
+            return {
+                slide: 0,
+                sliding: null
+            }
+        },
+        methods: {
+            onSlideStart(slide) {
+                this.sliding = true
+            },
+            onSlideEnd(slide) {
+                this.sliding = false
+            }
+        },
         components: {
             HomeNavigation
         },
@@ -101,7 +135,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '../assets/scss/variables';
     .book-now {
         color: $light-color;
@@ -133,8 +167,6 @@
         font-size: 21px;
     }
     .client-logo {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         .client-logo-img {
             width: 300px;
@@ -192,7 +224,8 @@
         .doctor-mike {
             display: flex;
             &-image {
-                width: 25.3%;
+                width: 300px;
+                height: 440px;
                 border: 4px $dark-color solid;
             }
             &-details {
@@ -216,6 +249,36 @@
                 h6 {
                     margin-bottom: 20px;
                     color: $light-color;
+                }
+            }
+        }
+    }
+    .home-services {
+        position: relative;
+        top: 260px;
+        &-group {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+        &-list {
+            h1 {
+                color: $primary-color;
+                font-size: 28px;
+                text-transform: uppercase;
+                text-align: left;
+            }
+            ul {
+                padding-left: 10px;
+                list-style: none;
+                li {
+                    font-size: 28px;
+                    text-align: left;
+                    padding: 20px 0px;
+                    .service-list-icon {
+                        color: $primary-color;
+                        margin-right: 10px;
+                    }
                 }
             }
         }

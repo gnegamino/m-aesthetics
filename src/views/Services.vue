@@ -5,7 +5,7 @@
             <b-container>
                 <div class="hero-title hero-title--right">
                     <h1>SERVICES</h1>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptate corrupti placeat earum ipsam aspernatur veritatis hic, molestiae, commodi nemo quibusdam delectus! Quidem, nulla aliquid. Recusandae ut perspiciatis voluptas fuga!</h2>
+                    <h2>Feeling tired and stressed? No worries! A surprise is waiting for you! Pamper yourself with our extraordinary services done by the professionals/experts.</h2>
                 </div>
             </b-container>
         </div>

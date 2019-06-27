@@ -5,7 +5,8 @@
             <b-container>
                 <div class="hero-title hero-title--left">
                     <h1>OUR COMPANY</h1>
-                    <h2></h2>
+                    <h2>Your beauty, our expertise.</h2>
+                    <h2>Allure and shine!</h2>
                 </div>
             </b-container>
         </div>
@@ -15,7 +16,7 @@
                     WHO ARE WE
                 </div>
                 <p class="content-paragraph">
-                    M Aesthetics Clinic is a worldclass facility which offer various products and procedures designed to enhance one's beauty and fulfill one's fantasy of magnificence. Procedures offered include Facials, Drips and Lasers. We are equipped with brandnew, state of the art machines that produce exceptional results. Our center also houses an Operating Theater designed to accommodate all aesthetic surgeries. Patients can rest in our Recovery Room after each surgery.
+                    M Aesthetics Clinic is a world class facility which offer various products and procedures designed to enhance one's beauty and fulfill one's fantasy of magnificence. Procedures offered include Facials, Drips and Lasers. We are equipped with brandnew, state of the art machines that produce exceptional results. Our center also houses an Operating Theater designed to accommodate all aesthetic surgeries. Patients can rest in our Recovery Room after each surgery.
                 </p>
                 <p class="content-paragraph">
                     Our Surgeon is a member of the Philippine Association of Plastic, Reconstructive and Aesthetic Surgeons (PAPRAS), the only society recognized by the Philippine Medical Association. This recognition assures you the best results. 
@@ -26,56 +27,26 @@
             </b-container>
         </div>
         <div class="content-section section--light">
-            <b-container>
-                <div class="content-header">
-                    OUR TEAM
-                </div>
-                <div class="our-team">
-                    <div class="team-detail">
-                        <img src="../assets/mike-versoza.jpeg">
-                        <div class="detail">
-                            <div class="member-name">
-                                Dr. Michael "Mike” Verzosa, M.D., D.P.B.P.S
+            <div class="owner-section">
+                <div class="container">
+                    <div class="doctor-mike">
+                        <img class="doctor-mike-image" src="../../src/assets/mike-versoza.jpeg">
+                        <div class="doctor-mike-details">
+                            <h2>Dr. Michael "MIKE" Verzosa, M.D., D.P.B.P.S</h2>
+                            <h3>Board Certified Plastic Surgeon</h3>
+                            <h3>Volunteer, Operation Smile</h3>
+                            <h3>Volunteer, Smile Train</h3>
+                            <div class="doctor-mike-affiliations">
+                                <h3>Affiliations:</h3>
+                                <h6>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons (PAPRAS)</h6>
+                                <img src="../../src/assets/papras.png">
                             </div>
-                            <div class="member-position">
-                                M-Aesthetics Owner
-                            </div>
-                            <p class="content-paragraph">
-                                Board Certified Plastic Surgeon
-
-                                Diplomate, Philippine Board of Plastic Surgery
-
-                                Philippine Association of Plastic Reconstructive and Aesthetic Surgeons (PAPRAS)
-
-                                Volunteer, Operation Smile 
-
-                                Volunteer, Smile Train
-                            </p>
                         </div>
                     </div>
                 </div>
-            </b-container>
+            </div>
         </div>
-        <div class="parallax parallax-1 content-section">
-            <b-container>
-                <div class="content-header">
-                    WHAT WE DO
-                </div>
-                <p class="content-paragraph">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
-                </p>
-                <p class="content-paragraph">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
-                </p>
-                <p class="content-paragraph">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
-                </p>
-                <p class="content-paragraph">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, incidunt culpa facere repellat tempora obcaecati eius. Autem excepturi consectetur omnis perspiciatis repellendus culpa libero architecto, vitae soluta corrupti, voluptates officiis!
-                </p>
-            </b-container>
-        </div>
-        <div class="content-section section--light">
+        <div class="content-section section--slate">
             <b-container>
                 <div class="content-header">
                     WHERE WE DO IT
@@ -111,7 +82,50 @@
 
 <style lang="scss" scoped>
     @import '../assets/scss/variables';
-
+    .owner-section {
+        display: flex;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        padding: 30px 0px;
+        h2 {
+            font-weight: 300;
+        }
+        .doctor-mike {
+            display: flex;
+            &-image {
+                width: 300px;
+                height: 440px;
+                border: 4px $dark-color solid;
+            }
+            &-details {
+                margin-left: 40px;
+                flex: 1;
+                text-align: left;
+                h2 {
+                    color: $dark-color;
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    font-size: 20px;
+                    color: $dark-color;
+                }
+            }
+            &-affiliations {
+                margin-top: 25px;
+                h3 {
+                    color: $dark-color;
+                }
+                h6 {
+                    margin-bottom: 20px;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
     .our-team {
         .member-name {
             font-size: 25px;
@@ -145,6 +159,7 @@
         img {
             flex: 1;
             width: 20%;
+            height: 256px;
             padding: 15px;
             &:hover {
                 opacity: .7;
