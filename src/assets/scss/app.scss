@@ -133,7 +133,7 @@ body {
 
 .content-section {
     padding: 40px 0px;
-    background-color: $dark-color;
+    background-color: darken($dark-color, 10%);
     .content-header {
         font-size: 40px;
         color: $primary-color;
@@ -145,7 +145,8 @@ body {
     .content-paragraph {
         margin-top: 15px;
         font-size: 18px;
-        text-align: left;
+        text-align: justify;
+        line-height: 2;
     }
     &.section--slate {
         background-color: #202021;

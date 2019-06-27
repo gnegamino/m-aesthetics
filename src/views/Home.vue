@@ -14,7 +14,19 @@
             <img class="client-logo-img" src="../../src/assets/client-logo.png">
         </div>
         <HomeNavigation/>
-        <div class="client-floating-contact">
+        <div class="book-now">
+            <h2>
+                Dr. Michael "Mike” Verzosa, M.D., D.P.B.P.S
+            </h2>
+            <h3>
+                Board Certified Plastic Surgeon
+            </h3>
+            <div class="book-appointment">
+                <p>BOOK APPOINTMENT NOW!</p>
+                <p>+632 962 5744 / +639 25 536 3651</p>
+            </div>
+        </div>
+        <!-- <div class="client-floating-contact">
             <table>
                 <tr>
                     <td width="30px"><span class="fas fa-envelope"></span></td>
@@ -40,24 +52,37 @@
                     <td><span>@maesthetics</span></td>
                 </tr>
             </table>
-        </div>
+        </div> -->
         <div class="bg-bldg">
             <div class="intro-client-brand">
                 <h1>M AESTHETICS</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste sed blanditiis facilis, delectus, magnam porro rerum sunt in ex eligendi veritatis eaque cum consectetur maxime consequatur ullam laborum laboriosam.
+                    A worldclass facility which offer various products and procedures designed to enhance one's beauty and fulfill one's fantasy of magnificence.
                 </p>
             </div>
         </div>
-        <div class="client-important-content">
-            <h2>This is an important advertisement content.</h2>
+        <div class="owner-section">
+            <div class="container">
+                <div class="doctor-mike">
+                    <img class="doctor-mike-image" src="../../src/assets/mike-versoza.jpeg">
+                    <div class="doctor-mike-details">
+                        <h2>Dr. Michael "MIKE" Verzosa, M.D., D.P.B.P.S</h2>
+                        <h3>Board Certified Plastic Surgeon</h3>
+                        <h3>Volunteer, Operation Smile</h3>
+                        <h3>Volunteer, Smile Train</h3>
+                        <div class="doctor-mike-affiliations">
+                            <h3>Affiliations:</h3>
+                            <h6>Philippine Association of Plastic Reconstructive and Aesthetic Surgeons (PAPRAS)</h6>
+                            
+                            <img src="../../src/assets/papras.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="bg-2">
-            <div class="intro-left">
-                <h1>M AESTHETICS</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iste sed blanditiis facilis, delectus, magnam porro rerum sunt in ex eligendi veritatis eaque cum consectetur maxime consequatur ullam laborum laboriosam.
-                </p>
+            <div class="home-services">
+                    asdas
             </div>
         </div>
     </div>
@@ -78,7 +103,23 @@
 
 <style lang="scss">
     @import '../assets/scss/variables';
-
+    .book-now {
+        color: $light-color;
+        font-weight: bold;
+        width: 50%;
+        margin: 25px auto 0px auto;
+        h3 {
+            font-size: 24px;
+        }
+        .book-appointment {
+            color: $light-color;
+            font-size: 32px;
+            margin-top: 35px;
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
     .intro-container {
         padding-top: 60px;
         display: flex;
@@ -119,21 +160,22 @@
         }
     }
     .bg-bldg {
-        background: url('../../src/assets/bg-bldg.png');
+        background: url('../../src/assets/stock/stock-1.jpg');
         height: 980px;
         width: 100%;
         position: relative;
         top: 300px;
     }
     .bg-2 {
-        background: url('../../src/assets/parallax-2.jpg') no-repeat center center fixed;
+        background: url('../../src/assets/stock/stock-2.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         height: 900px;
     }
-    .client-important-content {
+    .owner-section {
+        display: flex;
         position: relative;
         top: 200px;
         display: flex;
@@ -143,9 +185,39 @@
         z-index: 1;
         padding: 30px 0px;
         color: #444;
-        background: #fff;
+        background: lighten($dark-color, 8%);
         h2 {
             font-weight: 300;
+        }
+        .doctor-mike {
+            display: flex;
+            &-image {
+                width: 25.3%;
+                border: 4px $dark-color solid;
+            }
+            &-details {
+                margin-left: 40px;
+                flex: 1;
+                text-align: left;
+                h2 {
+                    color: $primary-color;
+                    margin-bottom: 20px;
+                }
+                h3 {
+                    font-size: 20px;
+                    color: $light-color;
+                }
+            }
+            &-affiliations {
+                margin-top: 25px;
+                h3 {
+                    color: $primary-color;
+                }
+                h6 {
+                    margin-bottom: 20px;
+                    color: $light-color;
+                }
+            }
         }
     }
 </style>
