@@ -61,6 +61,7 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
     #sub-navigation-bar {
         display: flex;
         flex-direction: column;
@@ -68,7 +69,7 @@
         top: 0px;
         width: 100%;
         z-index: 10000;
-        background-color: #081224;
+        background-color: lighten($dark-color, 5%);
         .client-contact {
             width: 100%;
         }

@@ -5,9 +5,11 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
+
     .footer {
-        background: #0f0f0f;
-        color: #fff;
+        background: lighten($dark-color, 5%);
+        color: $light-color;
         padding: 25px 0px;
     }
 </style>

@@ -83,11 +83,11 @@
                 if (window.scrollY > 670) {
                     document.getElementById('sub-navigation-bar').style.visibility = "visible";
                     document.getElementById('sub-navigation-bar').style.opacity = "1";
-                    document.querySelector('.client-floating-contact').style.display = "none";
+                    // document.querySelector('.client-floating-contact').style.display = "none";
                 } else {
                     document.getElementById('sub-navigation-bar').style.visibility = "hidden";
                     document.getElementById('sub-navigation-bar').style.opacity = "0";
-                    document.querySelector('.client-floating-contact').style.display = "block";
+                    // document.querySelector('.client-floating-contact').style.display = "block";
                 }
             }
         },
@@ -104,6 +104,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
+
     #main-navigation-bar {
         margin-top: 40px;
         height: 80px;
@@ -118,7 +120,7 @@
         top: 0px;
         width: 100%;
         z-index: 10000;
-        background-color: rgb(8, 18, 36);
+        background-color: lighten($dark-color, 10%);
         .client-contact {
             width: 100%;
         }

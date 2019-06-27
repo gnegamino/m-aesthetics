@@ -5,7 +5,7 @@
             <b-container>
                 <div class="hero-title hero-title--right">
                     <h1>SERVICES</h1>
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptate corrupti placeat earum ipsam aspernatur veritatis hic, molestiae, commodi nemo quibusdam delectus! Quidem, nulla aliquid. Recusandae ut perspiciatis voluptas fuga!</h2>
+                    <h2>Feeling tired and stressed? No worries! A surprise is waiting for you! Pamper yourself with our extraordinary services done by the professionals/experts.</h2>
                 </div>
             </b-container>
         </div>
@@ -80,6 +80,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/scss/variables';
+
     .content-and-picture {
         display: flex;
         justify-content: center;
@@ -89,8 +91,8 @@
             margin-left: 25px;
             text-align: left;
             .detail-button {
-                background-color: #000;
-                color: #fff;
+                background-color: $dark-color;
+                color: $light-color;
                 padding: 6px 12px;
                 border: none;
             }
